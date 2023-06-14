@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제목</h1>
+    <h2>오늘의 일기</h2>
+    <h3>h3입니다.</h3>
+    <p>오늘은 날씨가 좋았다, 첫번째 html 수업을 했다.
+        <br />
+        멋진 퍼블리셔가 되는 날도 얼마 남지 않았다!!!!
+    </p>
+    
+    <hr />
+    <h4>오늘의 할 일</h4>
+    <!-- ul type의 속성값
+        - disc(기본값,default)
+        - square
+        - circle
+        - none
+    -->
+    <ul type="circle">
+        <li>html 복습하기</li>
+        <li>맛집 찾기</li>
+        <li>운동하기</li>
+    </ul>
+
+    <h4>아메리카노 만드는 법</h4>
+    <!--ol type
+        - 1
+        - A
+        - a
+        - I
+        - i
+    -->
+    < type="A">
+        <li><b>물</b>을 <strong>넣습니다.</strong></li>
+        <li><i>얼음</i>물을 <em>넣습니다.</em></li>
+        <li><del>에스프레소</del> <u>샷</u>을  &nbsp; 넣습니다.</li>
+    <!-- &nbsp; - 뛰어쓰기 코드-->
+    </ol>
+
+
+    <!-- 리스트 안에 리스트 넣기-->
+    <hs>내가 좋아하는 음식</hs>
+    <ul>
+        <li>양식
+            <ol type="a">
+                <li>감바스</li>
+                <li>스테이크</li>
+                <li>알리오올리오</li>
+            </ol>        
+        </li>
+        <li>한식
+            <ol type="a">
+                <li>김치찌개</li>
+                <li>치킨</li>
+            </ol>
+        </li>
+        <li>일식
+            <ol type="a">
+                <li>초밥</li>
+                <li>텐동</li>
+            </ol>
+       
+    </ul>
+
+    <!-- details & summary tag-->
+    <details>
+        <summary>제목</summary>
+        <ul>
+            <li>아무거나</li>
+            <li>넣어도 돼요</li>
+        </ul>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perspiciatis ut? Dolore exercitationem suscipit, odio recusandae unde aut deleniti quasi incidunt sit animi atque earum iste minima. Reprehenderit, molestiae et!</div>
+    </details>
+
+    <h3>img & a 태그</h3>
+    <!-- img 속성 
+            - src : 이미지 경로
+            - alt : 이미지 설명
+    -->
+    <!--a 태그 속성
+            - href : 이동경로
+            - target : 웹 페이가 열릴 위치
+            - title : a 태그에 대한 설명
+    -->
+
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjNfNyAg%2FMDAxNjg0ODI4NjM4Mzk3.EsfKWgY21yjUk8RGaoQU0oOl-Ho00mnymUueG20EpOUg.JV0qUZgqoTP6mH8FHqx0b7Z4hbKiTGXGJnqyCZTwBcog.JPEG.jieon2992%2FIMG_5761.JPG&type=a340"
+    alt="마라탕사진" width="500" alt="마라탕"/>
+    <!-- 상대경로와 절대경로
+        - 상대경로 : 현재 위치로부터 경로를 찾는 것
+        - 절대경로 : 상단의 폴더부터 차례대로 경로를 찾는 것
+    -->
+    <img src="/html/img/순대국밥.jpg" alt="순대국밥" width="400">
+    <img src="./img/순대국밥.jpg" alt="순대국밥" width="300">
+
+    <a href="https://www.naver.com/" target="_blank"
+    title="mouse 커서를 올리면 나타난다는 문장입니다.">네이버로 이동</a>
+    <br />
+    <br />
+    <a href="/test/practice01.html">카페메뉴(절대 경로)</a>
+    <a href="../test/practice01.html">카페메뉴(상대 경로)</a>
+    <br />
+    <br />
+
+    <!-- 새로운 사진을 저장한 후 
+    사진을 클릭했을 때 구글로 이동하도록 만들기
+-->
+    <a href="http://www.google.com">
+        <img src="./img/순대국밥.jpg" alt="google 이동 순대국밥" />
+    </a>
+
+</body>
+</html>
