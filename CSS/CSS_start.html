@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 적용방법 </title>
+    <style>
+        p{
+          background-color: #c358ab;
+          color: aliceblue;  
+        }
+        /*
+        색깔 지정방법 3가지
+        1. 색깔 이름 : red, pink, aliceblue, ...
+        2. rgb(숫자1, 숫자2, 숫자3) 0이 가장 어두운 숫자 , 255가 가장 밝은 숫자
+         - 숫자1,2,3 은 256개의 수로 이루어져 있습니다(0~255)
+        3. #------ 여섯자리 숫자를 쓰면 됩니다. 
+            단, 16 진수로 이루어진 숫자
+            16진수 0~9, a,b,c,d,e,f 
+        */
+        div{
+            background-color: red;
+        }
+
+        h2{
+            background-color: rgb(131, 28, 131);
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="./style01.css">
+</head>
+<body>
+    <h1>CSS style 적용 방법 3가지</h1>
+    <div style="background-color: aqua;">인라인 방식</div> 
+    <!-- 구역을 나누는 것에 씀 -->
+    <p>내장 스타일 태그 방식</p>
+    <!-- 문단 -->
+    <ul>
+        <li>외부 스타일 시트</li>
+        <li>방식</li>
+    </ul>
+    <h2>내장 스타일 vs link 방식 h2</h2> 
+    <!-- 순서에 따라서 우선순위가 달라짐, 가장 밑에 있는 거로 읽힘 -->
+</body>
+</html>
