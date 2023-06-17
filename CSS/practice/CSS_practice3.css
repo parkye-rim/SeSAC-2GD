@@ -1,27 +1,47 @@
-p.lion{
+form {
+    width: 400px;
+  }
+  
+  h1:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  textarea:focus {
+    background-color: rgb(250, 197, 205);
+    outline: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+ 
+  #red:checked + label {
     background-color: red;
-}
-
-ul > .lion{
-    background-color: greenyellow;
-}
-
-#tiger{
+    color: white;
+  }
+  
+  #blue:checked + label {
+    background-color: blue;
+    color: white;
+  }
+  
+  #yellow:checked + label {
     background-color: yellow;
-}
-
-.lion{
-    color: sienna;
-}
-
-div .lion{
-    font-weight: bold;
-}
-
-#tiger + li{
-    background-color: skyblue;
-}
-
-li.lion ~ li{
-    background-color: orange;
-}
+  }
+  
+  button {
+    float: right;
+    padding: 5px 15px;
+    background-color: #f96666;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 0;
+  }
+  
+  button:active {
+    color: #f96666;
+    background-color: gray;
+  }
