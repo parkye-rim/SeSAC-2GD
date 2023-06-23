@@ -1,0 +1,44 @@
+.box {
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  background-color: aqua;
+  border: 1px solid black;
+  transition-duration: 1s;
+  cursor: pointer;
+  transition: 2s;
+  /* 마우스를 떼고, 뺄 때 모두 자연스럽게 변함 */
+}
+
+body {
+  perspective: 500px;
+}
+
+.box1:hover {
+  /* transition
+            - transition-property: 속성 이름
+              어떤 속성에 transition 효과를 줄건지
+            - transition-duration (transition의 필수 속성)
+              몇초 동안 변화가 일어날지
+            - transition-timing-function : 시간 함수
+                ease(default)
+            - transition-delay : 동작의 시작 시간을 얼마나 늦출지
+        */
+  width: 200px;
+  /* transform: translateX(50px) scaleX(2); */
+}
+
+.box2:hover {
+  transform: translate(50%, 0) skewX(-45deg);
+}
+
+.box3:hover {
+  background-color: red;
+  border-radius: 50%;
+  transform: translateX(300px) rotate(360deg);
+}
+
+.box4:hover {
+  background-color: yellow;
+  transform: translateY(50px) rotateY(360deg) scale(2);
+}
