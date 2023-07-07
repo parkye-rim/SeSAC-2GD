@@ -1,3 +1,15 @@
+for (let index = 0; index < 10; index += 1) {
+  console.log(index);
+}
+
+for (let i = 0; i < 20; i += 2) {
+  console.log(i);
+}
+
+for (let i = 10; i >= 0; i--) {
+  console.log(i);
+}
+
 // 이중 포문 사용(포문 안에 포문)
 // 구구단 2단 ~ 9단 출력하기
 for (let i = 2; i < 10; i++) {
